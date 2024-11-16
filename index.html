@@ -64,7 +64,7 @@
                 <article>
                     <h3>Alimentos tradicionales y saludables en México</h3>
                     <p>México cuenta con una gran variedad de alimentos ricos en nutrientes. Aquí te mostramos cómo integrarlos en tu dieta diaria.</p>
-                    <a href="link-to-article.html">Leer más...</a>
+                    <a href="art2.html">Leer más...</a>
                 </article>
 </section>
 
@@ -93,6 +93,56 @@
 
 </section>
 </main>
+
+<script>
+    // Simulación de autenticación (reutilizando la lógica de la página principal)
+    let isLoggedIn = false;
+
+    // Elementos de la sección
+    const authWarning = document.getElementById('authWarning');
+    const experienceForm = document.getElementById('experienceForm');
+    const commentList = document.getElementById('commentList');
+
+    // Mostrar u ocultar el formulario según el estado de sesión
+    function updateExperienceSection() {
+        if (isLoggedIn) {
+            authWarning.style.display = 'none';
+            experienceForm.style.display = 'block';
+        } else {
+            authWarning.style.display = 'block';
+            experienceForm.style.display = 'none';
+        }
+    }
+
+    // Lógica para manejar el envío de experiencias
+    experienceForm.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevenir recarga de la página
+
+        if (isLoggedIn) {
+            // Obtener datos del formulario
+            const nombre = document.getElementById('nombre').value.trim();
+            const comentario = document.getElementById('comentario').value.trim();
+
+            if (nombre && comentario) {
+                // Crear un nuevo comentario
+                const newComment = document.createElement('li');
+                newComment.innerHTML = `<strong>${nombre}:</strong> ${comentario}`;
+                commentList.appendChild(newComment);
+
+                // Limpiar el formulario
+                document.getElementById('nombre').value = '';
+                document.getElementById('comentario').value = '';
+            } else {
+                alert('Por favor, completa todos los campos.');
+            }
+        } else {
+            alert('Debes iniciar sesión para compartir tu experiencia.');
+        }
+    });
+
+    // Inicializar la sección al cargar la página
+    updateExperienceSection();
+</script>
 
 <footer>
 <p>&copy; 2024 Blog de Nutrición en México. Todos los derechos reservados.</p>
