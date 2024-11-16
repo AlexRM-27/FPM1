@@ -1,0 +1,63 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Alimentos Saludables</title>
+</head>
+<body>
+    <header>
+        <h1>Infografía: Alimentos Saludables</h1>
+        <nav>
+            <button onclick="location.href='index.html'">Regresar al Inicio</button>
+        </nav>
+    </header>
+
+    <!-- Sección de la Infografía -->
+    <section>
+        <h2>Normas Oficiales en México</h2>
+        <!-- Mostramos el PDF incrustado -->
+        <embed src="assets/infografia-nom.pdf" type="application/pdf" width="100%" height="500px">
+    </section>
+
+    <!-- Caja de Comentarios -->
+    <section id="comentarios">
+        <h2>Comentarios</h2>
+        <form id="commentForm">
+            <!-- Verificación de Inicio de Sesión -->
+            <p id="loginWarning" style="color:red; display:none;">Debes iniciar sesión para comentar.</p>
+            <textarea id="commentBox" placeholder="Escribe tu comentario..." rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <ul id="commentList">
+            <!-- Los comentarios aparecerán aquí -->
+        </ul>
+    </section>
+
+    <script>
+        // Simulación básica de verificación de inicio de sesión
+        const isLoggedIn = false; // Cambiar a true cuando el usuario inicie sesión
+
+        const commentForm = document.getElementById('commentForm');
+        const commentBox = document.getElementById('commentBox');
+        const loginWarning = document.getElementById('loginWarning');
+        const commentList = document.getElementById('commentList');
+
+        commentForm.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevenir el envío del formulario
+            if (!isLoggedIn) {
+                loginWarning.style.display = 'block';
+            } else {
+                loginWarning.style.display = 'none';
+                const newComment = document.createElement('li');
+                newComment.textContent = commentBox.value;
+                commentList.appendChild(newComment);
+                commentBox.value = ''; // Limpiar la caja de comentarios
+            }
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Blog de Nutrición en México. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
