@@ -72,15 +72,25 @@
 <section id="colaboraciones">
     <h2>Comparte tu experiencia</h2>
     <p>¿Tienes consejos o experiencias sobre la nutrición? Deja tu comentario y comparte con la comunidad.</p>
+<!-- Advertencia para usuarios no autenticados -->
+    <p id="authWarning" style="color: red; display: none;">Debes iniciar sesión para compartir tu experiencia.</p>
+    
     <form>
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" placeholder="Tu nombre..." required>
+        <input type="text" id="nombre" placeholder="Alias" required>
         
         <label for="comentario">Comentario:</label>
         <textarea id="comentario" rows="4" placeholder="Escribe tu comentario..." required></textarea>
         
         <button type="submit"><span class="material-icons">send</span> Enviar</button>
     </form>
+
+    <!-- Lista de comentarios -->
+    <h3>Experiencias Compartidas</h3>
+    <ul id="commentList">
+        <!-- Aquí se mostrarán los comentarios -->
+    </ul>
+
 </section>
 </main>
 
