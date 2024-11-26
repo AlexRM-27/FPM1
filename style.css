@@ -14,3 +14,10 @@ body{
     padding: 0;
     color: var(--color6);
 }
+
+header{
+    background-color: var(--color2);
+    color: var(--color6);
+    padding: 20px;
+    text-align: center;
+}
