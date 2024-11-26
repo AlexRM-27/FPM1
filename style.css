@@ -24,6 +24,7 @@ header{
 }
 
 /* Código asistido con IA Generativa */
+/* Secciones alineadas horizontalmente */
 #login, #registro {
     display: inline-block; /* Colocar las secciones lado a lado */
     vertical-align: top; /* Alineación superior */
@@ -32,6 +33,17 @@ header{
     background-color: var(--color5);
     color: var(--color7);
     padding: 20px;
+    border-radius: 10px;
+}
+
+/* Código asistido con IA Generativa */
+/* Sección Sobre Nosotros */
+#sobre-nosotros {
+    text-align: center;
+    margin: 40px auto; /* Centra la sección horizontalmente */
+    max-width: 800px; /* Ancho máximo */
+    padding: 20px;
+    background-color: var(--color3);
     border-radius: 10px;
 }
 
