@@ -28,8 +28,8 @@ header{
 #login, #registro {
     display: inline-block; /* Colocar las secciones lado a lado */
     vertical-align: top; /* Alineación superior */
-    width: 48%; /* Cada sección ocupa la mitad del ancho */
-    margin: 1%; /* Espaciado entre ellas */
+    width: 40%; /* Cada sección ocupa la mitad del ancho */
+    margin: 2%; /* Espaciado entre ellas */
     background-color: var(--color5);
     color: var(--color7);
     padding: 20px;
@@ -44,6 +44,16 @@ header{
     max-width: 800px; /* Ancho máximo */
     padding: 20px;
     background-color: var(--color3);
+    border-radius: 10px;
+}
+
+/* Código asistido con IA Generativa */
+/* Sección Artículos */
+#blog {
+    margin: 40px auto;
+    max-width: 900px;
+    background-color: var(--color1);
+    padding: 20px;
     border-radius: 10px;
 }
 
