@@ -21,3 +21,39 @@ header{
     padding: 20px;
     text-align: center;
 }
+
+/* Código asistido con IA Generativa */
+nav ul {
+    list-style: none; /* Quitar bullets */
+    display: flex; /* Alinear horizontalmente */
+    justify-content: center; /* Centrar los elementos */
+    gap: 20px; /* Espaciado entre elementos */
+    padding: 0;
+    margin: 0;
+}
+
+/* Código asistido con IA Generativa */
+nav li {
+    display: inline; /* Garantiza que los enlaces estén en línea */
+}
+
+/* Código asistido con IA Generativa */
+nav a {
+    text-decoration: none; /* Quitar subrayado */
+    color: var(--color6); /* Color del texto */
+    font-weight: bold;
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Animación suave */
+}
+
+/* Código asistido con IA Generativa */
+nav a:hover {
+    background-color: var(--color3); /* Fondo al pasar el mouse */
+    color: var(--color1); /* Cambiar el color del texto */
+}
+
+/* Código asistido con IA Generativa */
+nav img {
+    vertical-align: middle; /* Alinear la imagen con el texto */
+}
