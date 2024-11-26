@@ -125,3 +125,19 @@ nav img {
     color: var(--color1); /* Cambiar el color del texto */
 }
 
+/* Código asistido con IA Generativa. */
+/* Botones generales */
+button {
+    background-color: var(--color3);
+    color: var(--color6);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--color6);
+    color: var(--color7);
+}
