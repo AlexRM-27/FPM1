@@ -45,8 +45,9 @@ nav img {
 /* Código asistido con IA Generativa. */
 .nav-item {
     display: inline-block; /* Asegura que cada elemento sea un bloque en línea */
-    margin: 0 10px; /* Espaciado horizontal entre los elementos */
+    margin: 0 10px auto; /* Espaciado horizontal entre los elementos */
     padding: 10px 15px; /* Espaciado interno */
+    border: 20px ;
     background-color: var(--color2); /* Fondo */
     border-radius: 5px; /* Bordes redondeados */
     text-align: center; /* Centra el texto dentro del bloque */
