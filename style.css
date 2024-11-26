@@ -58,6 +58,29 @@ header{
 }
 
 /* Código asistido con IA Generativa */
+/* Formulario de compartir experiencia */
+#colaboraciones form {
+    display: inline-block;
+    width: 40%; /* Ocupa la mitad del espacio */
+    background-color: var(--color1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Código asistido con IA Generativa */
+/* Lista de comentarios */
+#commentList {
+    display: inline-block;
+    width: 48%; /* Ocupa la mitad del espacio */
+    background-color: var(--color4);
+    padding: 20px;
+    border-radius: 10px;
+    list-style: none; /* Sin bullets */
+    max-height: 400px; /* Altura máxima con scroll */
+    overflow-y: auto; /* Barra de desplazamiento si es necesario */
+}
+
+/* Código asistido con IA Generativa */
 nav ul {
     list-style: none; /* Quitar bullets */
     display: flex; /* Alinear horizontalmente */

@@ -108,27 +108,19 @@
 
 <!-- Sección de Comentarios Colaborativos -->
 <section id="colaboraciones">
+    <form>
     <h2>Comparte tu experiencia</h2>
     <p>¿Tienes consejos o experiencias sobre la nutrición? Deja tu comentario y comparte con la comunidad.</p>
-<!-- Advertencia para usuarios no autenticados -->
-    <p id="authWarning" style="color: red; display: none;">Debes iniciar sesión para compartir tu experiencia.</p>
-    
-    <form>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" placeholder="Alias" required>
-        
-        <label for="comentario">Comentario:</label>
-        <textarea id="comentario" rows="4" placeholder="Escribe tu comentario..." required></textarea>
-        
+        <textarea rows="5" placeholder="Escribe tu experiencia"></textarea>
         <button type="submit"><span class="material-icons">send</span> Enviar</button>
     </form>
 
     <!-- Lista de comentarios -->
-    <h3>Experiencias Compartidas</h3>
     <ul id="commentList">
-        <!-- Aquí se mostrarán los comentarios -->
+        <h3>Experiencias Compartidas</h3>
+        <li><strong>Usuario 1:</strong> Comentario del usuario.</li>
+        <li><strong>Usuario 2:</strong> Otro comentario.</li>
     </ul>
-
 </section>
 </main>
 
