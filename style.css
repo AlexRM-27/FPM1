@@ -5,6 +5,7 @@
     --color4: #00B2CA;
     --color5: #1D4E89;
     --color6: #000000;
+    --color7: #FFFFFF;
 }
 
 body{
@@ -20,6 +21,18 @@ header{
     color: var(--color6);
     padding: 20px;
     text-align: center;
+}
+
+/* Código asistido con IA Generativa */
+#login, #registro {
+    display: inline-block; /* Colocar las secciones lado a lado */
+    vertical-align: top; /* Alineación superior */
+    width: 48%; /* Cada sección ocupa la mitad del ancho */
+    margin: 1%; /* Espaciado entre ellas */
+    background-color: var(--color5);
+    color: var(--color7);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 /* Código asistido con IA Generativa */
@@ -66,3 +79,4 @@ nav img {
     background-color: var(--color3); /* Cambiar el fondo al pasar el ratón */
     color: var(--color1); /* Cambiar el color del texto */
 }
+
