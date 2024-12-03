@@ -41,8 +41,6 @@ div{
 }
 
 button {
-    display:flex;
-    justify-content: center;
     background-color: var(--color3);
     color: var(--color6);
     border: none;
