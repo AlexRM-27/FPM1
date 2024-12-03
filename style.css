@@ -11,6 +11,7 @@
 /* Se ordena el archivo CSS por orden de especificidad */
 
 /* Selectores de tipo */
+
 body{
     background-color: var(--color1);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -40,9 +41,12 @@ div{
 }
 
 button {
+    display:flex;
+    justify-content: center;
     background-color: var(--color3);
     color: var(--color6);
     border: none;
+    margin: auto;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -134,17 +138,40 @@ nav img {
     transform: scale(1.05);
 }
 
+.boton-art{
+    background-color: var(--color5);
+    color: var(--color7);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
 button:hover {
     background-color: var(--color6);
     color: var(--color7);
 }
 
 /* Selectores de ID */
-#login, #registro {
-    display: inline-block; /* Colocar las secciones lado a lado */
-    vertical-align: top; /* Alineación superior */
-    width: 40%; /* Cada sección ocupa la mitad del ancho */
-    margin: 2%; /* Espaciado entre ellas */
+#login {
+    margin: auto; 
+    background-color: var(--color5);
+    color: var(--color7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#login input, button{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#registro {
+    margin: auto; 
     background-color: var(--color5);
     color: var(--color7);
     padding: 20px;
