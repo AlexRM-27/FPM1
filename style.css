@@ -8,6 +8,9 @@
     --color7: #FFFFFF;
 }
 
+/* Se ordena el archivo CSS por orden de especificidad */
+
+/* Selectores de tipo */
 body{
     background-color: var(--color1);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -23,8 +26,69 @@ header{
     text-align: center;
 }
 
-/* Código asistido con IA Generativa */
-/* Secciones alineadas horizontalmente */
+button {
+    background-color: var(--color3);
+    color: var(--color6);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Selectores de clase, atributos o pseudo-clases */
+nav ul {
+    list-style: none; /* Quitar bullets */
+    display: flex; /* Alinear horizontalmente */
+    justify-content: center; /* Centrar los elementos */
+    gap: 20px; /* Espaciado entre elementos */
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline; /* Garantiza que los enlaces estén en línea */
+}
+
+nav img {
+    vertical-align: middle; /* Alinear la imagen con el texto */
+}
+
+.nav-item {
+    display: inline-block; /* Asegura que cada elemento sea un bloque en línea */
+    margin: 0 10px auto; /* Espaciado horizontal entre los elementos */
+    padding: 10px 15px; /* Espaciado interno */
+    background-color: var(--color2); /* Fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto dentro del bloque */
+    transition: background-color 0.3s ease; /* Transición suave al interactuar */
+}
+
+.nav-item a {
+    text-decoration: none; /* Quitar subrayado */
+    color: var(--color6); /* Color del texto */
+    font-weight: bold;
+    display: block; /* Hace que el enlace ocupe todo el área del bloque */
+}
+
+.nav-item:hover {
+    background-color: var(--color3); /* Cambiar el fondo al pasar el ratón */
+    color: var(--color1); /* Cambiar el color del texto */
+}
+
+button:hover {
+    background-color: var(--color6);
+    color: var(--color7);
+}
+
+.registro-form{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* Selectores de ID */
 #login, #registro {
     display: inline-block; /* Colocar las secciones lado a lado */
     vertical-align: top; /* Alineación superior */
@@ -36,8 +100,6 @@ header{
     border-radius: 10px;
 }
 
-/* Código asistido con IA Generativa */
-/* Sección Sobre Nosotros */
 #sobre-nosotros {
     text-align: center;
     margin: 40px auto; /* Centra la sección horizontalmente */
@@ -47,8 +109,6 @@ header{
     border-radius: 10px;
 }
 
-/* Código asistido con IA Generativa */
-/* Sección Artículos */
 #blog {
     margin: 40px auto;
     max-width: 900px;
@@ -57,8 +117,6 @@ header{
     border-radius: 10px;
 }
 
-/* Código asistido con IA Generativa */
-/* Formulario de compartir experiencia */
 #colaboraciones form {
     display: inline-block;
     width: 40%; /* Ocupa la mitad del espacio */
@@ -67,8 +125,6 @@ header{
     border-radius: 10px;
 }
 
-/* Código asistido con IA Generativa */
-/* Lista de comentarios */
 #commentList {
     display: inline-block;
     width: 48%; /* Ocupa la mitad del espacio */
@@ -80,64 +136,3 @@ header{
     overflow-y: auto; /* Barra de desplazamiento si es necesario */
 }
 
-/* Código asistido con IA Generativa */
-nav ul {
-    list-style: none; /* Quitar bullets */
-    display: flex; /* Alinear horizontalmente */
-    justify-content: center; /* Centrar los elementos */
-    gap: 20px; /* Espaciado entre elementos */
-    padding: 0;
-    margin: 0;
-}
-
-/* Código asistido con IA Generativa */
-nav li {
-    display: inline; /* Garantiza que los enlaces estén en línea */
-}
-
-/* Código asistido con IA Generativa */
-nav img {
-    vertical-align: middle; /* Alinear la imagen con el texto */
-}
-
-/* Código asistido con IA Generativa. */
-.nav-item {
-    display: inline-block; /* Asegura que cada elemento sea un bloque en línea */
-    margin: 0 10px auto; /* Espaciado horizontal entre los elementos */
-    padding: 10px 15px; /* Espaciado interno */
-    background-color: var(--color2); /* Fondo */
-    border-radius: 5px; /* Bordes redondeados */
-    text-align: center; /* Centra el texto dentro del bloque */
-    transition: background-color 0.3s ease; /* Transición suave al interactuar */
-}
-
-/* Código asistido con IA Generativa. */
-.nav-item a {
-    text-decoration: none; /* Quitar subrayado */
-    color: var(--color6); /* Color del texto */
-    font-weight: bold;
-    display: block; /* Hace que el enlace ocupe todo el área del bloque */
-}
-
-/* Código asistido con IA Generativa. */
-.nav-item:hover {
-    background-color: var(--color3); /* Cambiar el fondo al pasar el ratón */
-    color: var(--color1); /* Cambiar el color del texto */
-}
-
-/* Código asistido con IA Generativa. */
-/* Botones generales */
-button {
-    background-color: var(--color3);
-    color: var(--color6);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-button:hover {
-    background-color: var(--color6);
-    color: var(--color7);
-}
