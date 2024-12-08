@@ -14,27 +14,27 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: var(--color1);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: var(--color6);
     line-height: 1.5;
 }
 
-header{
+header {
     background-color: var(--color2);
     color: var(--color6);
     padding: 10px 20px;
     text-align: center;
 }
 
-h2, h3{
+h2, h3 {
     font-weight: bold;
     text-align: center;
     text-decoration: underline;
 }
 
-div{
+div {
     display: flex;
     flex-direction: column; 
     gap: 20px; 
@@ -62,7 +62,7 @@ nav ul {
     margin: 0;
 }
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -90,7 +90,7 @@ nav ul {
     color: var(--color1); /* Cambiar el color del texto */
 }
 
-.signin-signup{
+.signin-signup {
     display: flex;
     margin: 20px auto;
     gap: 20px;
@@ -110,14 +110,14 @@ nav ul {
     border-radius: 10px;
 }
 
-.signin-form{
+.signin-form {
     display: flex;
     flex-direction: row;
     gap: 10px;
     margin: 0 auto;
 }
 
-.signup{
+.signup {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -130,28 +130,43 @@ nav ul {
     border-radius: 10px;
 }
 
-.contenedor-perfiles{
+.sobre-nosotros {
+    text-align: center;
+    margin: 40px auto; /* Centra la sección horizontalmente */
+    max-width: 800px; /* Ancho máximo */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sobre-nosotros h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.contenedor-perfiles {
     display: flex;
     gap: 20px;
     justify-content: center;
-    align-items: center;
+    flex-flow: row;
 }
 
 .perfil{
     text-align: center;
     background-color: var(--color3);
-    padding: 20px;
+    width: 450px;
+    height: 500px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, background-color 0.3s;
 }
 
 .foto-perfil{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 .link-linkedin{
@@ -164,6 +179,7 @@ nav ul {
 
 .perfil:hover{
     transform: scale(1.05);
+    background-color: var(--color4);
 }
 
 .boton-art{
@@ -188,20 +204,6 @@ button:hover {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-}
-
-#sobre-nosotros {
-    text-align: center;
-    margin: 40px auto; /* Centra la sección horizontalmente */
-    max-width: 800px; /* Ancho máximo */
-    padding: 20px;
-    border-radius: 10px;
-}
-
-#sobre-nosotros h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    background-color: var(--color3);
 }
 
 #blog {
