@@ -144,6 +144,38 @@ nav ul {
     border-radius: 10px;
 }
 
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.signup-form label {
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.input-signup-form {
+    width: auto;
+    height: auto;
+    padding: 4px 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    text-decoration: solid none;
+}
+
+.signup-display{
+    padding: 30px;
+}
+
+.signup-button{
+    margin-top: 20px;
+}
+
 #login input{
     width: 100%;
     height: fit-content;
