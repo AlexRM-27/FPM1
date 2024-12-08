@@ -23,12 +23,9 @@
 </head>
 <body>
     <header>
-        <h1>NutriendoMentes</h1>
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li class="nav-item">
-                    <a href="#"><img src="assets/X-NUTRI.png" alt="Inicio" width="80" height="80"></a>
-                </li>
+        <nav aria-label="Navegación principal" class="navbar">
+            <a href="index.html" class="logo"><img src="assets/X-NUTRI.png" alt="NutriendoMentes" width="80" height="80"></a>
+            <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="#sobre-nosotros"><span class="material-icons">person</span> Sobre nosotros</a>
                 </li>
@@ -36,28 +33,28 @@
                     <a href="#blog"><span class="material-icons">article</span> Artículos</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contacto"><span class="material-icons">email</span> Contacto</a>
+                    <a href="mailto:alejandro.ruiz@ingenieria.unam.edu"><span class="material-icons">email</span> Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <!-- Sección de Inicio de Sesión y Registro -->
-    <section id="inicio">
-        <div id="login">
+    <section class="signin-signup">
+        <div id="login" class="signin">
             <h2>Iniciar Sesión</h2>
-            <form>
+            <form class="signin-form">
                 <label for="username">Usuario:</label>
-                <input type="text" id="username" placeholder="Tu usuario" required>
+                <input type="text" id="username" placeholder="Tu usuario" required >
                 <label for="password">Contraseña:</label>
                 <input type="password" id="password" placeholder="Tu contraseña" required>
                 <button type="submit">Iniciar Sesión</button>
             </form>
         </div>        
     
-        <div id="registro">
+        <div id="registro" class="signup">
             <h2>¿Aún no tienes cuenta?</h2>
-            <p>Regístrate para interactuar y compartir tus experiencias en Nutriendo Mentes.</p>
+            <p>Regístrate para interactuar y compartir tus experiencias en NutriendoMentes.</p>
             <a href="registro.html">
                 <button>Registrarse</button>
             </a>
