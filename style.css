@@ -33,13 +33,6 @@ h2, h3 {
     text-align: center;
     text-decoration: underline;
 }
-/* 
-div {
-    display: flex;
-    flex-direction: column; 
-    gap: 20px; 
-    align-items: center;
-} */
 
 button {
     background-color: var(--color3);
@@ -195,7 +188,12 @@ nav ul {
 
 .articulos {
     padding: 20px;
-    margin: 10px 0;
+    margin: 10px;
+}
+
+.articulos h2 {
+    font-size: 2rem;
+    text-decoration: none;
 }
 
 .contenedor-articulos {
@@ -210,7 +208,32 @@ nav ul {
     scroll-snap-align: start;
     text-align: center;
     text-decoration: none;
-    color: var(--letter-color);
+    color: var(--color6);
+    background-color: var(--color3);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.articulo h3{
+    margin: 20px;
+    font-style: italic;
+}
+
+.articulo p{
+    margin: 10px 10px;
+}
+
+.articulo img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.articulo:hover{
+    transform: scale(1.05);
+    background-color: var(--color4);
 }
 
 .boton-art{
