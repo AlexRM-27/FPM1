@@ -33,13 +33,13 @@ h2, h3 {
     text-align: center;
     text-decoration: underline;
 }
-
+/* 
 div {
     display: flex;
     flex-direction: column; 
     gap: 20px; 
     align-items: center;
-}
+} */
 
 button {
     background-color: var(--color3);
@@ -92,15 +92,20 @@ nav ul {
 
 .signin-signup {
     display: flex;
+    gap: 20px; 
+    align-items: center;
     margin: 20px auto;
     gap: 20px;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 }
 
 .signin {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 20px; 
+    align-items: center;
     width: 550px;
     height: 200px;
     margin: auto; 
@@ -119,8 +124,10 @@ nav ul {
 
 .signup {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
+    gap: 20px;
+    align-items: center;
     width: 550px;
     height: 200px;
     margin: auto; 
@@ -161,6 +168,10 @@ nav ul {
     transition: transform 0.3s, background-color 0.3s;
 }
 
+.perfil p{
+    margin: 0 10px;
+}
+
 .foto-perfil{
     width: 200px;
     height: 200px;
@@ -180,6 +191,26 @@ nav ul {
 .perfil:hover{
     transform: scale(1.05);
     background-color: var(--color4);
+}
+
+.articulos {
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.contenedor-articulos {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.articulo{
+    scroll-snap-align: start;
+    text-align: center;
+    text-decoration: none;
+    color: var(--letter-color);
 }
 
 .boton-art{
@@ -204,14 +235,6 @@ button:hover {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-}
-
-#blog {
-    margin: 40px auto;
-    max-width: 900px;
-    background-color: var(--color1);
-    padding: 20px;
-    border-radius: 10px;
 }
 
 #colaboraciones form {
