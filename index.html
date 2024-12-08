@@ -150,72 +150,23 @@
         </section>
 
 <!-- Sección de Comentarios Colaborativos -->
-<section id="colaboraciones">
+<section class="experiencias">
     <form>
     <h2>Comparte tu experiencia</h2>
-    <p>¿Tienes consejos o experiencias sobre la nutrición? Deja tu comentario y comparte con la comunidad.</p>
-        <textarea rows="5" placeholder="Escribe tu experiencia"></textarea>
-        <button type="submit"><span class="material-icons">send</span> Enviar</button>
+    <p>¿Tienes consejos o experiencias sobre la nutrición?</p>
+    <p>Deja tu comentario y comparte con la comunidad.</p>
+        <textarea placeholder="Escribe tu experiencia"></textarea>
+        <button type="submit"><span class="material-icons">send</span> <p>Comentar</p></button>
     </form>
 
     <!-- Lista de comentarios -->
-    <ul id="commentList">
+    <ul class="comentarios">
         <h3>Experiencias Compartidas</h3>
         <li><strong>Usuario 1:</strong> Comentario del usuario.</li>
         <li><strong>Usuario 2:</strong> Otro comentario.</li>
     </ul>
 </section>
 </main>
-
-<script>
-    // Simulación de autenticación (reutilizando la lógica de la página principal)
-    let isLoggedIn = false;
-
-    // Elementos de la sección
-    const authWarning = document.getElementById('authWarning');
-    const experienceForm = document.getElementById('experienceForm');
-    const commentList = document.getElementById('commentList');
-
-    // Mostrar u ocultar el formulario según el estado de sesión
-    function updateExperienceSection() {
-        if (isLoggedIn) {
-            authWarning.style.display = 'none';
-            experienceForm.style.display = 'block';
-        } else {
-            authWarning.style.display = 'block';
-            experienceForm.style.display = 'none';
-        }
-    }
-
-    // Lógica para manejar el envío de experiencias
-    experienceForm.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevenir recarga de la página
-
-        if (isLoggedIn) {
-            // Obtener datos del formulario
-            const nombre = document.getElementById('nombre').value.trim();
-            const comentario = document.getElementById('comentario').value.trim();
-
-            if (nombre && comentario) {
-                // Crear un nuevo comentario
-                const newComment = document.createElement('li');
-                newComment.innerHTML = `<strong>${nombre}:</strong> ${comentario}`;
-                commentList.appendChild(newComment);
-
-                // Limpiar el formulario
-                document.getElementById('nombre').value = '';
-                document.getElementById('comentario').value = '';
-            } else {
-                alert('Por favor, completa todos los campos.');
-            }
-        } else {
-            alert('Debes iniciar sesión para compartir tu experiencia.');
-        }
-    });
-
-    // Inicializar la sección al cargar la página
-    updateExperienceSection();
-</script>
 
 <footer>
 <p>&copy; 2024 NutriendoMentes. Todos los derechos reservados.</p>

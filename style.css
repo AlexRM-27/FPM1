@@ -46,6 +46,10 @@ button {
     transition: transform 0.3s, background-color 0.3s;
 }
 
+button:hover {
+    background-color: var(--color4);
+}
+
 nav ul {
     list-style: none; /* Quitar bullets */
     display: flex; /* Alinear horizontalmente */
@@ -59,6 +63,7 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .nav-item {
@@ -128,6 +133,15 @@ nav ul {
     color: var(--color7);
     padding: 20px;
     border-radius: 10px;
+}
+
+#login input{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .sobre-nosotros {
@@ -241,30 +255,76 @@ nav ul {
     background-color: var(--color4);
 }
 
-#login input, button{
+.experiencias {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    background-color: var(--color3);
 }
 
-#colaboraciones form {
-    display: inline-block;
-    width: 40%; /* Ocupa la mitad del espacio */
-    background-color: var(--color1);
-    padding: 20px;
+.experiencias form {
+    display: flex;
+    width: auto;
     border-radius: 10px;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-#commentList {
+.experiencias h2 {
+    text-decoration: solid none;
+    font-size: 2rem;
+}
+
+.experiencias p {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+}
+
+.experiencias textarea{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    resize: none;
+    overflow: scroll;
+    border-radius: 5px;
+    border: 1px solid var(--color6);
+    max-width: auto;
+    max-height: auto;
+}
+
+.experiencias button {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: var(--color4);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.experiencias button:hover {
+    background-color: var(--color5);
+}
+
+.comentarios {
     display: inline-block;
-    width: 48%; /* Ocupa la mitad del espacio */
+    width: auto;
     background-color: var(--color4);
     padding: 20px;
     border-radius: 10px;
-    list-style: none; /* Sin bullets */
-    max-height: 400px; /* Altura máxima con scroll */
-    overflow-y: auto; /* Barra de desplazamiento si es necesario */
+    list-style: none;
+    max-height: 400px;
+    overflow-y: auto;
 }
 
