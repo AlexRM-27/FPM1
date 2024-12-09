@@ -57,6 +57,10 @@ footer{
     font-size: larger;
     font-style: italic;
     padding: 30px 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 nav ul {
@@ -68,11 +72,37 @@ nav ul {
     margin: 0;
 }
 
+.logo-flotante{
+    position: fixed;
+    top: 30px;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.logo-flotante img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.logo {
+    padding: 0 10px;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .nav-item {
