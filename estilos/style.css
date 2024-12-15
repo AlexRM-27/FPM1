@@ -373,6 +373,12 @@ nav ul {
         right: 0;
         z-index: 110;
     }
+
+    .logo-flotante {
+        position: fixed;
+        top: 0.5rem;
+        left: 0.5rem;
+    }
     
     .navbar {
         display: flex;
