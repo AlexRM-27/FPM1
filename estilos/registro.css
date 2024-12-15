@@ -29,3 +29,11 @@
 .signup-button{
     margin-top: 1.25rem;
 }
+
+
+@media screen and (max-width: 450px) {
+    .signup-form {
+        width: 100%;
+        height: fit-content;
+    }
+}
